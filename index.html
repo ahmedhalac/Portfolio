@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Halac | Web Development & Design</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+      //Menu toggle-button
+      $(document).ready(function() {
+        $(".menu-icon").on("click", function() {
+          $("nav ul").toggleClass("showing");
+        });
+      });
+
+      //Scroling Effects
+      $(window).on('scroll', function() {
+        if($(window).scrollTop()) {
+          $('nav').addClass('black');
+        }
+        else {
+          $('nav').removeClass('black');
+        }
+      })
+
+    </script>
+  </head>
+
+  <body>
+    <div class="header-wrapper">
+      <header>
+        <nav>
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+          <div class="logo">
+            <div class="name">AHMED HALAČ</div>
+            <div class="title">FRONT-END WEB DEVLOPER</div>
+          </div>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="bg-img">
+        <div class="text-wrapper">
+          <h1>Hello, I'm <span>Ahmed Halač</span>.</h1>
+          <h1>Welcome to my website</h1>
+        </div>
+      </section>
+    </div>
+
+    <div class="main-wrapper">
+
+    <!-- about section -->
+    <div class="first-section">
+      <section id="about">
+        <h1>About</h1>
+        <div class="img-with-text">
+          <img src="img/profile-pic.jpg" alt="profile picture">
+          <p>My name is Ahmed Halač. I'm studying at the Faculty of Informational Technology in Sarajevo. After I graduated from high school I
+            started to interest about programming and ever since than I have been actively working and developing my skills. I know several programming
+            languages like: Python, C++, Java, JavaScript, HTML & CSS. In my free time I like to travel and listen to some quality music.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="picture-one"></div>
+
+    <!-- projects section -->
+    <div class="second-section">
+      <section id="projects">
+        <h1>Projects</h1>
+        <div class="row">
+          <div class="project-one">
+            <img src="img/hangman.png" alt="" width="40%" height="auto">
+          </div>
+          <div class="project1-text">
+            <h2>Python Hangman Game</h2>
+            <p>Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or
+              sentence and the other(s) tries to guess it by suggesting letters or numbers, within a certain number of guesses.</p>
+            <ul>
+              <h3>Accomplishments</h3>
+              <li>Developed main logic for this game</li>
+              <li>Created graphics with Python Turtle</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="project-two">
+            <img src="img/htmlcssjs.png" alt="" width="40%" height="auto">
+          </div>
+          <div class="project2-text">
+            <h2>Chor Door Game</h2>
+            <p>Chore Door Game is a guessing game in which we have three doors and we open them randomly, if we open the robot
+              we lose the game and if we avoid the robot we win.</p>
+            <ul>
+              <h3>Accomplishments</h3>
+              <li>Developed main logic for this game</li>
+              <li>HTML, CSS & JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="picture-two"></div>
+
+    <!-- blog section -->
+    <div class="third-section">
+      <section id="blog">
+        <h1>blog</h1>
+        <div class="blog-text1">
+          <h2>Node.js</h2>
+          <p class="top"><img src="icons/nodejs.png" alt="" width="25%" height="auto">
+            Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O
+            model that makes it lightweight and efficient. npm is a Node.js package of open source library which is largest in the
+            world.<br><br>It’s an asynchronous event driven JavaScript runtime, which is designed to build scalable network applications.
+            It can handle many concurrent connections at a time, where when connection request are made concurrently for each
+            connection a callback is fired .If there is no task to be performed Node will go to sleep. Node.js connection handling
+            mechanism is super efficient than our existing classical thread based model Thread-based networking is relatively
+            inefficient and very difficult to use. Furthermore, users of Node are free from worries of dead-locking the process,
+            since there are no locks. Almost no function in Node directly performs I/O, so the process never blocks. Because nothing
+            blocks, scalable systems are very reasonable to develop in Node.</p>
+            <h3>What Can Node.js Do?</h3>
+            <ul>
+              <li>Node.js can generate dynamic page content</li>
+              <li>Node.js can create, open, read, write, delete, and close files on the server</li>
+              <li>Node.js can collect form data</li>
+              <li>Node.js can add, delete, modify data in your database</li>
+            </ul>
+            <p>Following are some of the prominent highlights that make Node.js the first choice of software developers specially
+              backend.</p>
+            <dl>
+              <dt>1. It is asynchronous and event Driven −</dt>
+              <dd>All APIs of Node.js library are asynchronous, that is, non-blocking. It essentially means a Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call.</dd>
+              <dt>2. Super Fast:</dt>
+              <dd>Being built on Google Chrome’s V8 JavaScript Engine, Node.js is super efficient and quick in code execution.</dd>
+              <dt>3. Single Threaded but Highly Scalable:</dt>
+              <dd>Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers like Apache which create limited threads to handle requests.</dd>
+              <dt>4. No Buffering:</dt>
+              <dd>Node.js applications never buffer any data. These applications simply output the data in chunks.</dd>
+            </dl>
+            <p>Because of above specifications some of the biggies like eBay, Paypal, Godaddy, General electronic , Yahoo etc.. relies on Node for their server side programming needs.<br>
+              Learn more: <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a>
+            <br>Here is useful video to get started with Node.js.</p>
+        </div>
+        <iframe width="540" height="320" src="https://www.youtube.com/embed/w-7RQ46RgxU?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="blog-text2">
+          <h2>Angular JS</h2>
+          <p class="top"><img src="icons/angular.svg" alt="" width="20%" height="auto">
+            Angular was one of the original JavaScript frameworks, developed by Google and first released in 2010. While tech has
+            a tendency to gravitate toward newer tools and platforms over time, Angular has managed to stay in the top three of
+            GitHub’s framework popularity, which speaks to how entrenched Angular is in the web development scene. Further,
+            Angular’s job-related stats are still healthy with Indeed listing nearly 7,000 Angular-related developer jobs as of
+            this writing.<br><br>Based on these stats, Angular won’t be disappearing anytime soon, but it’s true that its popularity is being surpassed by younger counterparts like Vue and React. Flexibility (or lack of it) is a big part of this industry shift—one of the benefits of Vue and React’s incremental approach is that both of those frameworks are “extensible,” meaning they are designed to be used alongside other programming tools. On the other hand, once the Angular framework is applied to a project the entire website or app needs to be built on top of Angular and conform to its syntax and rules.
+            Angular also requires use of a JavaScript variant language called TypeScript—not the end of the world, but it adds
+            to the overall learning curve for Angular. Despite some of its flexibility shortcomings, Angular is still enough of a
+            fixture in the tech industry that it remains a solid choice for learning in 2018.</p>
+            <h3>Why AngularJS?</h3>
+            <p>HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.</p>
+            <h3>Alternatives</h3>
+            <p>Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS, and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of these address the root problem that HTML was not designed for dynamic views.</p>
+            <h3>Extensibility</h3>
+            <p>AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Read on to find out how.<br>
+              Learn more: <a href="https://angularjs.org/" target="_blank">https://angularjs.org/</a></p>
+            <p>AngularJS directives allow the developer to specify custom and reusable HTML-like elements and attributes that define data bindings and the behavior of presentation components. Some of the most commonly used directives are:</p>
+           
+          </div>
+      </section>
+    </div>
+
+    <div class="picture-three"></div>
+
+    <!-- gallery section -->
+    
+    <div id="contact">
+      <form class="reg-form">
+        <h1>CONTACT</h1>
+        <input class="one" type="text" name="name" placeholder="Full name">
+        <input class="two" type="email" name="mail" placeholder="Your e-mail">
+        <input class="three" type="text" name="phone" placeholder="Phone number">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button class="button" type="submit" name="submit">SEND MAIL</button>
+      </form>
+    </div>
+   </div>
+
+   <footer>
+      <div class="middle">
+        <a class="btn" href="https://www.facebook.com/ahmedhalac" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn" href="https://www.instagram.com/_ahmedhalac/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn" href="https://twitter.com/ahmed_halac" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn" href="https://github.com/ahmedhalac" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <p>Ahmed Halač <span>&copy;2020</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
